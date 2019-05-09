@@ -1,0 +1,56 @@
+{
+  "name": "giscube-geoportal-template",
+  "version": "1.0.0-beta.0",
+  "description": "Generic Geoportal based on Giscube",
+  "productName": "Giscube Geoportal",
+  "cordovaId": "org.cordova.quasar.app",
+  "author": "Microdisseny <tech@microdisseny.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@giscube/geoportal": "^1.0.0-beta.2",
+    "@quasar/extras": "^1.1.2",
+    "@sentry/browser": "^5.1.1",
+    "@sentry/integrations": "^5.1.0",
+    "@types/leaflet": "^1.4.3",
+    "ajv": "^6.10.0",
+    "axios": "^0.18.0",
+    "leaflet": "^1.4.0",
+    "leaflet-editable": "git+https://github.com/copying/Leaflet.Editable.git",
+    "leaflet.path.drag": "0.0.6",
+    "lodash": "^4.17.11",
+    "point-in-polygon": "^1.0.1",
+    "quasar": "^1.0.0-beta.21",
+    "sass-loader": "^6.0.7",
+    "vue-i18n": "^7.3.3",
+    "vue2-leaflet": "^2.0.3",
+    "vuetable-2": "^1.7.5"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.0.0-beta.22",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.11.0",
+    "strip-ansi": "=3.0.1",
+    "webpack-bundle-analyzer": "^3.3.2"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
+  "resolutions": {
+    "ajv": "6.8.1"
+  }
+}
