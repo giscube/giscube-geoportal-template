@@ -8,6 +8,7 @@ import HomePanel from 'components/HomePanel'
 import {
   AuthPanel,
   CatalogPanel,
+  CoordsPanel,
   DataPanel,
   GeoportalPanel,
   GiscubeLayout,
