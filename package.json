@@ -11,7 +11,7 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@giscube/geoportal": "^1.0.0-beta.3",
+    "@giscube/geoportal": "^1.0.0-beta.15",
     "@quasar/extras": "^1.1.2",
     "@sentry/browser": "^5.2.0",
     "@sentry/integrations": "^5.2.0",
@@ -22,15 +22,14 @@
     "leaflet-editable": "git+https://github.com/copying/Leaflet.Editable.git",
     "leaflet.path.drag": "0.0.6",
     "lodash": "^4.17.11",
-    "point-in-polygon": "^1.0.1",
-    "quasar": "^1.0.0-beta.23",
+    "quasar": "^1.0.0-rc.4",
     "sass-loader": "^7.1.0",
     "vue-i18n": "^8.11.2",
     "vue2-leaflet": "^2.1.1",
     "vuetable-2": "^1.7.5"
   },
   "devDependencies": {
-    "@quasar/app": "^1.0.0-beta.24",
+    "@quasar/app": "^1.0.0-rc.5",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",

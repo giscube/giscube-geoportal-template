@@ -10,12 +10,13 @@ import {
   CatalogPanel,
   CoordsPanel,
   DataPanel,
-  GeoportalPanel,
   GiscubeLayout,
   HelpPanel,
-  MeasurePanel,
+  DrawPanel,
   PlacePanel,
   SearchPanel,
+  SharePanel,
+  ShareQuery,
   StreetViewPanel
 } from '@giscube/geoportal'
 
@@ -29,14 +30,15 @@ const routes = [
       { path: 'auth/', name: 'auth', component: AuthPanel },
       { path: 'catalog/:q?', component: CatalogPanel, name: 'catalog' },
       { path: 'contact/', component: ContactPanel, name: 'contact' },
-      { path: 'coords/:espg/:coords', component: CoordsPanel, name: 'coords' },
+      { path: 'coords/:epsg/:coords', component: CoordsPanel, name: 'coords' },
       { path: 'data/:sourceName?/:layerName?/', component: DataPanel, name: 'data' },
-      { path: 'geoportal/:q/', component: GeoportalPanel },
+      { path: 'geoportal/:q/', redirect: { name: 'place' } },
       { path: 'help/', component: HelpPanel, name: 'help' },
       { path: 'home/', component: HomePanel, name: 'home' },
-      { path: 'measure/', component: MeasurePanel, name: 'measure' },
+      { path: 'draw/', component: DrawPanel, name: 'draw' },
       { path: 'place/:q*', component: PlacePanel, name: 'place' },
       { path: 'search/:q*', component: SearchPanel, name: 'search' },
+      { path: 'share', component: SharePanel, name: 'share' },
       { path: 'streetview/:q?', component: StreetViewPanel, name: 'streetview' },
 
       { path: ':q?', name: 'auth_params', component: AuthPanel },
@@ -46,5 +48,7 @@ const routes = [
 ]
 
 export default new Router({
-  routes: routes
+  routes: routes,
+  parseQuery: ShareQuery.fromQuery,
+  stringifyQuery: ShareQuery.toQuery
 })
