@@ -37,10 +37,10 @@ export default base.merge({
     }
   },
   home: {
-    'zoom': 18,
-    'center': {
-      'lat': 41.973037,
-      'lng': 2.825180
+    zoom: 18,
+    center: {
+      lat: 41.973037,
+      lng: 2.825180
     }
   },
   locale: {
