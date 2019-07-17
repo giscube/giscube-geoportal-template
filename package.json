@@ -11,13 +11,13 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@giscube/geoportal": "^1.0.0-beta.37",
-    "@quasar/extras": "^1.1.4",
+    "@giscube/geoportal": "^1.0.0-beta.38",
+    "@quasar/extras": "^1.2.0",
     "@sentry/browser": "^5.5.0",
     "@sentry/integrations": "^5.5.0",
-    "@types/leaflet": "^1.4.5",
+    "@types/leaflet": "^1.4.6",
     "leaflet": "^1.5.1",
-    "quasar": "^1.0.4",
+    "quasar": "^1.0.5",
     "sass-loader": "^7.1.0",
     "vue2-leaflet": "^2.1.1"
   },
