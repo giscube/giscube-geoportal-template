@@ -11,7 +11,7 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@giscube/geoportal": "^1.0.0-beta.38",
+    "@giscube/geoportal": "^1.0.0-beta.40",
     "@quasar/extras": "^1.2.0",
     "@sentry/browser": "^5.5.0",
     "@sentry/integrations": "^5.5.0",

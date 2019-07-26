@@ -80,6 +80,7 @@ module.exports = function (ctx) {
 
         const htmlWebpackPlugin = cfg.plugins.find(plugin => plugin.constructor === HtmlWebpackPlugin)
         htmlWebpackPlugin.options.template = template
+        htmlWebpackPlugin.options.clientVersion = Math.floor(Date.now() / 1000)
 
         cfg.module.rules.push({
           enforce: 'pre',

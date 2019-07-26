@@ -14,8 +14,9 @@ require('@giscube/geoportal/dist/lib/giscube-geoportal.css')
 export default {
   name: 'App',
   extends: AppGeoportal,
-  data () {
-    return {
+  methods: {
+    automaticVersioning () {
+      return process.env.NODE_ENV === 'production'
     }
   }
 }
