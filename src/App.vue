@@ -9,7 +9,7 @@ import {
   AppGeoportal
 } from '@giscube/geoportal'
 
-require('@giscube/geoportal/dist/lib/giscube-geoportal.css')
+require('@giscube/geoportal/dist/lib/giscube-geoportal.min.css')
 
 export default {
   name: 'App',
